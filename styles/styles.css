@@ -253,6 +253,7 @@ h6 {
 h1,h2,h3,h4,h5,h6 {
   width: fit-content;
   margin: 0;
+  color: #000;
 }
 
 .section .default-content-wrapper h1::after,
@@ -348,7 +349,7 @@ button {
 button.button-primary,
 a.button-primary {
   display: block;
-  background-color: var(--color-brand-500);
+  background-color: #0391a0;
   font-size: var(--body-font-size-md);
   font-weight: 600;
   color: var(--color-neutral-50);
