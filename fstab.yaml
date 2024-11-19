@@ -1,0 +1,9 @@
+mountpoints:
+  /:
+    url: "https://author-p129970-e1492622.adobeaemcloud.com/bin/franklin.delivery/kradhakrish/aem-commerce-demo/main"
+    type: "markup"
+    suffix: ".html"
+
+folders:
+  /products/plan/: /products/plan/default
+  /products/: /products/default
