@@ -83,7 +83,7 @@ select:-webkit-autofill:focus ~ label {
 }
 
 .dropin-design .checkout-title::after {
-  border-bottom: 2px solid var(--color-brand-500);
+  border-bottom: #0596a6;
   content: "";
   display: block;
   padding-top: 8px;
