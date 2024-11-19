@@ -242,6 +242,17 @@ export default async function decorate(block) {
             },
             gap: 'small',
           },
+
+          // Config options here: 
+          // https://experienceleague.adobe.com/developer/commerce/storefront/dropins/product-details/pdp-containers/
+          hideAttributes: false,
+          hideDescription: true,
+          hideQuantity: false,
+          hideSelectedOptionValue: false,
+          hideSku:false,
+          
+          zoomType: 'overlay',  // 'zoom'
+
           slots: {
             Quantity: (ctx) => {
               const label = document.createElement('div');
@@ -254,9 +265,7 @@ export default async function decorate(block) {
               ctx.appendButton((next, state) => {
                 const adding = state.get('adding');
                 return {
-                  text: adding
-                    ? next.dictionary.Custom.AddingToCart?.label
-                    : blockConfig['add-to-cart-btn-text'] || placeholders.pdpProductAddtocart,
+                  text: 'Add to my cart', // can localise
                   icon: 'Cart',
                   variant: 'primary',
                   disabled: adding || !next.data.inStock || !next.valid,
@@ -286,7 +295,9 @@ export default async function decorate(block) {
                   },
                 };
               });
-              // Add To Wishlist Button
+              // insert new slots
+
+              // Wish list
               ctx.appendButton(() => ({
                 text: blockConfig['add-to-wishlist-btn-text'] ? blockConfig['add-to-wishlist-btn-text'] : placeholders.pdpCustomAddtowishlist,
                 icon: 'Heart',
@@ -294,13 +305,6 @@ export default async function decorate(block) {
                 onClick: () => console.debug('Add to Wishlist', ctx.data),
               }));
 
-              // Share Button
-              ctx.appendButton(() => ({
-                text: blockConfig['share-btn-text'] ? blockConfig['share-btn-text'] : placeholders.pdpCustomShare,
-                icon: 'Share',
-                variant: 'secondary',
-                onClick: () => console.debug('Share Button', ctx.data),
-              }));
             },
             Description: (ctx) => {
               const defaultContent = ctx?.data?.description;
