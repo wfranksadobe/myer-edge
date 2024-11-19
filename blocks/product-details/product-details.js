@@ -242,6 +242,15 @@ export default async function decorate(block) {
             },
             gap: 'small',
           },
+
+          // Hide / show product information
+          hideSku: false,
+          hideQuantity: false,
+          hideSelectedOptionValue: false,
+          hideShortDescription: false,
+          hideDescription: false,
+          hideAttributes: false,
+
           slots: {
             Quantity: (ctx) => {
               const label = document.createElement('div');
@@ -250,13 +259,12 @@ export default async function decorate(block) {
               ctx.prependChild(label);
             },
             Actions: (ctx) => {
+
               // Add to Cart Button
               ctx.appendButton((next, state) => {
                 const adding = state.get('adding');
                 return {
-                  text: adding
-                    ? next.dictionary.Custom.AddingToCart?.label
-                    : blockConfig['add-to-cart-btn-text'] || placeholders.pdpProductAddtocart,
+                  text: 'Add to cart',
                   icon: 'Cart',
                   variant: 'primary',
                   disabled: adding || !next.data.inStock || !next.valid,
@@ -286,21 +294,13 @@ export default async function decorate(block) {
                   },
                 };
               });
-              // Add To Wishlist Button
-              ctx.appendButton(() => ({
-                text: blockConfig['add-to-wishlist-btn-text'] ? blockConfig['add-to-wishlist-btn-text'] : placeholders.pdpCustomAddtowishlist,
-                icon: 'Heart',
-                variant: 'secondary',
-                onClick: () => console.debug('Add to Wishlist', ctx.data),
-              }));
 
-              // Share Button
-              ctx.appendButton(() => ({
-                text: blockConfig['share-btn-text'] ? blockConfig['share-btn-text'] : placeholders.pdpCustomShare,
-                icon: 'Share',
-                variant: 'secondary',
-                onClick: () => console.debug('Share Button', ctx.data),
-              }));
+              // Add custom slots here
+
+              
+             
+              // end custom slots here
+
             },
             Description: (ctx) => {
               const defaultContent = ctx?.data?.description;
