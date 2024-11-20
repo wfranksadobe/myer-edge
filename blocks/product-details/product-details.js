@@ -190,12 +190,12 @@ export default async function decorate(block) {
           image.url = `/images/products/${modifiedImageFileName}?format=webp`;
           
           // //preload
-          // const head = document.head;
-          // const link = document.createElement('link');
-          // link.rel = 'preload';
-          // link.href = image.url;
-          // link.as = 'image';
-          // head.appendChild(link);
+          const head = document.head;
+          const link = document.createElement('link');
+          link.rel = 'preload';
+          link.href = image.url+ '&auto=webp&quality=80&crop=false&fit=cover&width=960';
+          link.as = 'image';
+          head.appendChild(link);
           
         });
         return {
