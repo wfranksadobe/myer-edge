@@ -193,7 +193,7 @@ export default async function decorate(block) {
           const head = document.head;
           const link = document.createElement('link');
           link.rel = 'preload';
-          link.href = image.url+ '&auto=webp&quality=80&crop=false&fit=cover&width=960';
+          link.href = image.url+ `&auto=webp&quality=80&crop=false&fit=cover&width=960`;
           link.as = 'image';
           head.appendChild(link);
           
