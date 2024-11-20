@@ -188,6 +188,7 @@ export default async function decorate(block) {
 
           // Update the URL to the new format
           image.url = `/images/products/${modifiedImageFileName}?format=webp`;
+          image.as = 'image';
         });
         return {
           ...data,
