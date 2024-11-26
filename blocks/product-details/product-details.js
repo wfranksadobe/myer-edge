@@ -193,7 +193,7 @@ export default async function decorate(block) {
           const head = document.head;
           const link = document.createElement('link');
           link.rel = 'preload';
-          link.href = decodeURI(`https://main--aem-commerce-demo--kradhakrish.hlx.live/images/products/${modifiedImageFileName}?format=webp&auto=webp&quality=80&crop=false&fit=cover&width=960`); 
+          link.href = decodeURI(`https://main--aem-commerce-demo--wfranksadobe.hlx.live/images/products/${modifiedImageFileName}?format=webp&auto=webp&quality=80&crop=false&fit=cover&width=960`); 
           link.as = 'image';
           head.appendChild(link);
 
