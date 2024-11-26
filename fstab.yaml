@@ -1,6 +1,6 @@
 mountpoints:
   /:
-    url: "https://author-p137176-e1382526.adobeaemcloud.com/bin/franklin.delivery/wfranksadobe/myer/main"
+    url: "https://author-p137176-e1382526.adobeaemcloud.com/bin/franklin.delivery/wfranksadobe/myer-edge/main"
     type: "markup"
     suffix: ".html"
 
