@@ -1,19 +1,19 @@
 {
     "mappings": [
-      "/content/myer/:/",
-      "/content/myer/configuration:/.helix/config.json",
-      "/content/myer/metadata:/metadata.json",
-      "/content/myer/configs:/configs.json",
-      "/content/myer/configs-stage:/configs-stage.json",
-      "/content/myer/configs-dev:/configs-dev.json",
-      "/content/myer/redirects:/redirects.json",
-      "/content/myer/placeholders:/placeholders.json",
-      "/content/myer/products/recommended-products:/products/recommended-products.json",
-      "/content/myer/enrichment/enrichment:/enrichment/enrichment.json",
-      "/content/dam/myer/images/products/:/images/products/"
+      "/content/myer-edge/:/",
+      "/content/myer-edge/configuration:/.helix/config.json",
+      "/content/myer-edge/metadata:/metadata.json",
+      "/content/myer-edge/configs:/configs.json",
+      "/content/myer-edge/configs-stage:/configs-stage.json",
+      "/content/myer-edge/configs-dev:/configs-dev.json",
+      "/content/myer-edge/redirects:/redirects.json",
+      "/content/myer-edge/placeholders:/placeholders.json",
+      "/content/myer-edge/products/recommended-products:/products/recommended-products.json",
+      "/content/myer-edge/enrichment/enrichment:/enrichment/enrichment.json",
+      "/content/dam/myer-edge/images/products/:/images/products/"
     ],
     "includes": [
-      "/content/myer",
-      "/content/dam/myer/images/products/"
+      "/content/myer-edge",
+      "/content/dam/myer-edge/images/products/"
     ]
 }
