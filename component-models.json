@@ -75,11 +75,11 @@
           "multi": false
         },
         {
-          "component": "text",
-          "valueType": "string",
-          "name": "href",
+          "component": "aem-content",
+          "name": "image_link",
           "value": "",
-          "label": "Link"
+          "label": "Link",
+          "valueType": "string"
         },
         {
           "component": "text",
