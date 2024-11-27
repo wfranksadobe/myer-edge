@@ -349,7 +349,7 @@ button {
 button.button-primary,
 a.button-primary {
   display: block;
-  background-color: #0391a0;
+  background-color: #fc5732;
   font-size: var(--body-font-size-md);
   font-weight: 600;
   color: var(--color-neutral-50);
