@@ -6,8 +6,8 @@ https://experienceleague.adobe.com/developer/commerce/storefront/
 
 ## Environments
 
-- Preview: https://main--aem-commerce-demo--kradhakrish.hlx.page/us/en/
-- Live: https://main--aem-commerce-demo--kradhakrish.hlx.live/us/en/
+- Preview: https://main--myer-edge--wfranksadobe.hlx.page/us/en/
+- Live: https://main--myer-edge--wfranksadobe.hlx.live/us/en/
 
 ## Pre-requisites
 
