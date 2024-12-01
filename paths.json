@@ -3,6 +3,7 @@
       "/content/myer-edge/:/",
       "/content/myer-edge/configuration:/.helix/config.json",
       "/content/myer-edge/metadata:/metadata.json",
+      "/content/myer-edge/headers:/headers.json",
       "/content/myer-edge/configs:/configs.json",
       "/content/myer-edge/configs-stage:/configs-stage.json",
       "/content/myer-edge/configs-dev:/configs-dev.json",
