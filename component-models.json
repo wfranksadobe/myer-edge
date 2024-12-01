@@ -508,7 +508,7 @@
           ]
         },
         {
-          "component": "text",
+          "component": "product_picker",
           "valueType": "string",
           "name": "default-product",
           "label": "Default Product",
