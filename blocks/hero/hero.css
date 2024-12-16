@@ -13,7 +13,7 @@ main .hero-container > div {
   display: flex;
   padding: 5rem 10rem;
   min-height: 725px;
-  background: linear-gradient(180deg, #bcbcbc 0%, #ffffff 80.5%);
+  background: linear-gradient(180deg, #fc5732 0%, #ffffff 80.5%);
   border-radius: 18px;
   box-sizing: border-box;
   color: #fff;
